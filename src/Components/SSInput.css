@@ -1,0 +1,17 @@
+:root {
+  --default-border: grey;
+  --active-border: blue;
+}
+
+.SSInput {
+  border: 2px solid var(--default-border);
+  text-align: center;
+}
+
+.SSInput:focus,
+.SSInput:active,
+.SSInput:hover {
+  border: 2px solid var(--active-border);
+  box-shadow: none;
+  outline: none;
+}
