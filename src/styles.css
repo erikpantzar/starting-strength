@@ -1,0 +1,8 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.App-container {
+  max-width: 90vw;
+  padding: 2vh 5vw;
+}

@@ -1,0 +1,41 @@
+:root {
+  --color-light: #c1c1c1;
+}
+
+.SSHeader-separator {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+
+.SSHeader-title {
+  font-size: 14px;
+  margin-right: 6px;
+}
+
+.SSHeader-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.SSHeader-details {
+  color: var(--color-light);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.SSHeader-action {
+  font-size: 12px;
+}
+
+.SSHeader-text {
+  color: var(--color-light);
+  font-size: 12px;
+  padding-right: 3px;
+}
+
+.SSHeader-history {
+  font-size: 14px;
+  font-weight: 700;
+}
