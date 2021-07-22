@@ -1,13 +1,19 @@
-import React from 'react'
-import Item from '../WorkoutItem/Item'
-import './WorkoutList.css'
+import React from "react";
+import { Link } from 'react-router-dom'
+import Item from "../WorkoutItem/Item";
+import arrow from './WorkoutList-arrow.svg'
+import "./WorkoutList.css";
 
-const WorkoutList = () => (
+// const workouts = ['bench', 'squats']
+const WorkoutList = ({ workouts }) => (
     <nav className="WorkoutList">
-        <Item workout="bench" weight="60" details="3 sets of 8" />
-        <Item workout="deadlift" weight="90" details="2 sets of 4" />
-        <Item workout="squats" weight="120" details="3 sets of 8" />
+        {workouts.map((workout) => (
+            <Link className="WorkoutList-link" to={`/${workout}`}>
+                <span className="WorkoutList-link-text">{workout}</span>
+                <div className="WorkoutList-link-icon"><img src={arrow} /></div>
+            </Link>
+        ))}
     </nav>
-)
+);
 
-export default WorkoutList
+export default WorkoutList;

@@ -1,3 +1,4 @@
+import { BrowserRouter as Router } from 'react-router-dom'
 import WorkoutList from './WorkoutList'
 
 export default { 
@@ -5,4 +6,4 @@ export default {
   component: WorkoutList
 }
 
-export const Primary = () => <WorkoutList />
+export const Primary = () => <Router><WorkoutList workouts={['squats', 'bench', 'deadlift']} /></Router>
