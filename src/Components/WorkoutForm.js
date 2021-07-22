@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./WorkoutForm.css";
 import SSButton from "./SSButton";
 import SSInput from "./SSInput";
-import SSHeader from "./SSHeader";
 // Todo
 // 1. set weight to localState variable called updatedWeight
 // 2. function to change value of updatedWieght

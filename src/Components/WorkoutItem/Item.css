@@ -1,0 +1,14 @@
+.Item {
+	display: flex;	
+}
+
+
+.Item-image-container {
+	overflow: hidden;
+}
+
+
+.Item-text-container {
+	display: flex;
+	flex-direction: column;
+}

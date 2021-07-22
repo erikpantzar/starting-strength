@@ -1,4 +1,3 @@
-import { Route } from "react-router-dom";
 import WorkoutForm from "../Components/WorkoutForm";
 
 const Workout = () => {
@@ -6,16 +5,7 @@ const Workout = () => {
     console.log("whaaat " + excercise + " ", weight);
   };
 
-  return (
-    <div>
-      <WorkoutForm excercise="bench" weight={60} onSubmit={saveWorkout} />
-
-      <Route
-        path="/workout/A/edit"
-        render={() => <div>CHEnnanaaaa</div>}
-      ></Route>
-    </div>
-  );
+  return <WorkoutForm excercise="bench" weight={60} onSubmit={saveWorkout} />;
 };
 
 export default Workout;
