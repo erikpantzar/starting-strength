@@ -1,0 +1,9 @@
+:root {
+	--size:  44px;
+}
+
+.Toggler {
+	transform: rotate('90deg');
+	height: var(--size);
+	width: var(--size);
+}
