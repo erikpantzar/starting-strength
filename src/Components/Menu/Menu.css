@@ -3,7 +3,21 @@
 }
 
 .Toggler {
-	transform: rotate('90deg');
+	transform: rotate(90deg);
 	height: var(--size);
 	width: var(--size);
+	font-size:  22px;
+	border:  none;
+	padding:  0;
+	line-height:  var(--size);
+	background:  none;
+
+	transition:  transform 100ms ease-in-out;
+	cursor:  pointer;
 }
+
+.Toggler.Toggler--active {
+	transform: rotate(0);
+	transition:  transform 100ms ease-in-out;
+}
+

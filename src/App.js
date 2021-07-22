@@ -1,3 +1,4 @@
+import "./_colors.css";
 import "./styles.css";
 import { WorkoutProvider } from "./Context/workout-context";
 import Routes from "./Routes";
