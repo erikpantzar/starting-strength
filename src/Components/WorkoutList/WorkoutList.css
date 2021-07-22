@@ -1,0 +1,44 @@
+:root {
+  --color-light: #E2E2E2;
+  --color-mid: #C4C4C4;
+  --color-dark: #747474;
+}
+
+.WorkoutList {
+  display: flex;
+  height: 60vh;
+  flex-direction: column;
+}
+
+.WorkoutList-link {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;;
+}
+
+.WorkoutList-link:nth-child(1) {
+  background: var(--color-light);
+  color: #000000;
+}
+
+.WorkoutList-link:nth-child(2) {
+  background: var(--color-mid);
+  color: #000000;
+}
+
+.WorkoutList-link:nth-child(3) {
+  background: var(--color-dark);
+  color: #FFFF;
+}
+
+.WorkoutList-link-text {
+font-weight: 900;
+font-size: 24px;
+margin-left: 3vh;
+}
+
+.WorkoutList-link-icon {
+margin-right: 3vh;
+}
