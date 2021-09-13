@@ -1,11 +1,10 @@
-import WorkoutForm from "../Components/WorkoutForm";
+import WorkoutList from '../Components/WorkoutList/WorkoutList'
 
-const Workout = () => {
-  const saveWorkout = (excercise, weight) => {
-    console.log("whaaat " + excercise + " ", weight);
-  };
 
-  return <WorkoutForm excercise="bench" weight={60} onSubmit={saveWorkout} />;
-};
+const workouts = ['squats', 'deadlift', 'bench']
+
+const Workout = () => (
+  <WorkoutList workouts={workouts} type="a" />
+);
 
 export default Workout;

@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  BrowserRouter as Router,
   Redirect,
   Switch,
   Route
@@ -9,16 +8,19 @@ import {
 import Home from "./View/Home";
 import workoutA from "./View/workoutA";
 import workoutB from "./View/workoutB";
+import Workout from './View/Workout'
 
 const Routes = () => (
-  <Router>
+  
     <Switch>
       <Route exact path="/" component={Home}></Route>
-      <Route path="/workout/A" component={workoutA}></Route>
-      <Route path="/workout/B" component={workoutB}></Route>
+      <Route exact path="/workout/a" component={workoutA}></Route>
+      <Route exact path="/workout/a/:workout" component={Workout}></Route>
+      <Route exact path="/workout/b" component={workoutB}></Route>
+      <Route exact path="/workout/b/:workout" component={Workout}></Route>
+
       <Redirect to="/" />
     </Switch>
-  </Router>
 );
 
 export default Routes

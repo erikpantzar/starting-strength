@@ -1,7 +1,7 @@
-const Workout = () => (
-  <div>
-    <h1>Workout B</h1>
-  </div>
-);
+import WorkoutList from "../Components/WorkoutList/WorkoutList";
+
+const workouts = ["squats", "overhead", "lat"];
+
+const Workout = () => <WorkoutList workouts={workouts} type="b" />;
 
 export default Workout;

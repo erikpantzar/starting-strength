@@ -1,9 +1,20 @@
-import SiteHeader from '../Components/SiteHeader/SiteHeader'
+import ButtonGroup from "../Components/ButtonGroup/ButtonGroup";
+
+const workouts = [
+  {
+    text: "Variant A",
+    url: "workout/a",
+  },
+
+  {
+    text: "Variant B",
+    url: "workout/b",
+  },
+];
 
 const Home = () => (
   <div>
-    <SiteHeader />
-    <h1>Home</h1>
+    <ButtonGroup links={workouts} />
   </div>
 );
 
