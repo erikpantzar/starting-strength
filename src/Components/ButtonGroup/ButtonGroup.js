@@ -8,7 +8,7 @@ import arrowBlack from "./wide-arrow-black.svg";
 const ButtonGroup = ({ links }) => (
 	<nav className="ButtonGroup">
 		{links.map((link, index) => (
-			<Link className="ButtonGroup-link" to={link.url}>
+			<Link key={link.text} className="ButtonGroup-link" to={link.url}>
 				<span className="ButtonGroup-text">{link.text}</span>
 
 				<div className="ButtonGroup-arrow">

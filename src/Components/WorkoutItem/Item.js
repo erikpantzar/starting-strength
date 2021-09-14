@@ -5,7 +5,7 @@ const Item = ({ workout, weight, details }) => {
 	return (
 		<section className="Item">
 			<figure className="Item-image-container">
-				<img src="" />
+				<img src="" alt="container" />
 			</figure>
 
 			<div className="Item-text-container">
