@@ -15,12 +15,10 @@
 	flex-direction: column;
 	align-items: center;
 	flex: 1;
-	justify-content: space-around;
+	justify-content: center;
 	height: 100%;
 	box-sizing: border-box;
-	padding: 13% 0; /* Can be adjusted */
 	background: var(--background-light);
-
 	font: 500 18px/1 Roboto, sans-serif;
 	color: black;
 }
