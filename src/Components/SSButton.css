@@ -6,7 +6,6 @@
 .SSButton {
   width: 44px;
   height: 44px;
-  border-radius: 50%;
   border: none;
   transition: background 500ms ease-in;
   background: var(--default-color);

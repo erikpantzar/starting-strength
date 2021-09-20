@@ -6,6 +6,7 @@
 .SSInput {
   border: 2px solid var(--default-border);
   text-align: center;
+  width: 60px;
 }
 
 .SSInput:focus,

@@ -11,7 +11,6 @@
 	padding:  0;
 	line-height:  var(--size);
 	background:  none;
-
 	transition:  transform 100ms ease-in-out;
 	cursor:  pointer;
 }

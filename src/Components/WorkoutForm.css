@@ -20,21 +20,22 @@
 }
 
 .form-button {
-  width: 60%;
-  margin-bottom: 1rem;
-  line-height: 2.5;
+  width: 100vw;
+  border: none;
 }
 
 :root {
-  --color-primary: blue;
-  --color-ghost: #aaa;
+  --color-light: #E2E2E2;
+  --color-mid: #C4C4C4;
+  --color-dark: #747474;
 }
 
 .button-primary {
-  background: var(--color-primary);
+  background: var(--color-mid);
+  height: 30vh;
 }
 
 .button-ghost {
-  background: transparent;
-  border: 1px solid var(--color-ghost);
+  background: var(--color-dark);
+  height: 15vh;
 }

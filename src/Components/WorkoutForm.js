@@ -34,11 +34,9 @@ const WorkoutForm = ({ excercise, weight, onSubmit }) => {
       }}
     >
       <div className="values">
-        <SSButton onClick={() => changeWeight(-5)}>-5</SSButton>
-        <SSButton onClick={() => changeWeight(-2.5)}>-2.5</SSButton>
+        <SSButton onClick={() => changeWeight(-2.5)}>-</SSButton>
         <SSInput weight={updatedWeight} onChange={setUpdatedWeight} />
-        <SSButton onClick={() => changeWeight(2.5)}>+2.5</SSButton>
-        <SSButton onClick={() => changeWeight(5)}>+5</SSButton>
+        <SSButton onClick={() => changeWeight(2.5)}>+</SSButton>
       </div>
 
       <button type="submit" className="form-button button-primary">
