@@ -1,6 +1,6 @@
 :root {
-  --default-border: grey;
-  --active-border: blue;
+  --default-border: #BBBBBB;
+  --active-border: #000;
 }
 
 .SSInput {
