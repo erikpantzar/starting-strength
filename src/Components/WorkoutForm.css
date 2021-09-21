@@ -23,6 +23,7 @@
   width: 60%;
   margin-bottom: 1rem;
   line-height: 2.5;
+  cursor:  pointer;
 }
 
 :root {
