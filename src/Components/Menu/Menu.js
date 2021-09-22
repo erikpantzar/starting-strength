@@ -9,13 +9,28 @@ export const Toggler = () => {
 	};
 
 	return (
-		<button
-			type="button"
-			onClick={() => handleToggle()}
-			className={["Toggler", open ? "Toggler--active" : null].join(" ")}
-		>
-			II
-		</button>
+		<>
+			<button
+				type="button"
+				onClick={() => handleToggle()}
+				className={["Toggler", (open && "Toggler--active": null)].join(" ")}
+			>
+				II
+			</button>
+
+			<nav
+				className={["nav", open ? "nav--isOpen" : "nav--isClosed"].join(" ")}
+			>
+				<article>
+					<h2>What is Starting strength?</h2>
+
+					<p>
+						A workout program to get you started with basic excersices and get
+						stronger!
+					</p>
+				</article>
+			</nav>
+		</>
 	);
 };
 

@@ -1,23 +1,50 @@
 :root {
-	--size:  44px;
+	--size: 44px;
 }
 
 .Toggler {
 	transform: rotate(90deg);
 	height: var(--size);
 	width: var(--size);
-	font-size:  22px;
-	border:  none;
-	padding:  0;
-	line-height:  var(--size);
-	background:  none;
+	font-size: 22px;
+	border: none;
+	padding: 0;
+	line-height: var(--size);
+	background: none;
 
-	transition:  transform 100ms ease-in-out;
-	cursor:  pointer;
+	transition: transform 100ms ease-in-out;
+	cursor: pointer;
+
+	z-index: 10;
 }
 
 .Toggler.Toggler--active {
 	transform: rotate(0);
-	transition:  transform 100ms ease-in-out;
+	transition: transform 100ms ease-in-out;
 }
 
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	transform: translateX(100vw);
+	width: 100vw;
+	height: 100vh;
+	box-sizing: border-box;
+	margin: 2vh 5vw;
+	background: #fff;
+	color: #000;
+
+	transition: transform 120ms ease-in-out;
+}
+
+.nav.nav--isOpen {
+	transform: translateX(0);
+}
+
+.nav article {
+	top: 44px;
+	padding-top: 2em;
+	position: relative;
+	z-index: 2;
+}

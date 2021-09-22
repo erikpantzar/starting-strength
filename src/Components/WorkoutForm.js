@@ -45,8 +45,9 @@ const WorkoutForm = ({ excercise, weight, onSubmit }) => {
         Save
       </button>
       <button
+        type="button"
         className="form-button button-ghost"
-        onClick={window.history.back}
+        onClick={() => window.history.back()}
       >
         Cancel
       </button>
