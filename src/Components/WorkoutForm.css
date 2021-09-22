@@ -26,12 +26,6 @@
   bottom: 0;
 }
 
-.form-button {
-  width: 95vw;
-  border: none;
-  font-weight: 700;
-}
-
 :root {
   --color-light: #E2E2E2;
   --color-mid: #C4C4C4;
@@ -39,10 +33,20 @@
   --active-color: #000;
 }
 
+.form-button {
+  width: 95vw;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family:'Roboto',sans-serif;
+}
+
 .button-primary {
   background: var(--color-mid);
   border: 2px solid var(--color-dark);
   height: 30vh;
+  transition: background 500ms ease-in;
 }
 
 .button-ghost {
@@ -53,9 +57,7 @@
   margin-bottom: 5px;
 }
 
-.button-primary:hover,
-.button-primary:active {
-  transition: background 250ms ease-out, border 250ms ease-out;
-  border-color: var(--active-color);
-  background-color: var(--color-light);
+.form-button:hover,
+.form-button:active {
+  transition: background 250ms ease-out;
 }  
