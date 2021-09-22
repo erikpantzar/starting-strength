@@ -1,7 +1,6 @@
 .container {
   width: 100%;
   display: flex;
-  justify-items: center;
   align-items: center;
   flex-direction: column;
 }
@@ -9,11 +8,12 @@
 .values {
   width: 80%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 2rem;
 }
 
 .input {
+  margin-top: 50px;
   width: 50px;
   height: 30px;
   text-align: center;
