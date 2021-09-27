@@ -1,20 +1,26 @@
 :root {
-  --default-color: #c1c1c1;
-  --active-color: blue;
+  --default-color: #BBBBBB;
+  --active-color: #000;
 }
 
 .SSButton {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  border: none;
-  transition: background 500ms ease-in;
-  background: var(--default-color);
+  display:inline-block;
+  height: 60px;
+  width: 60px;
+  border: 2px solid var(--default-color);
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family:'Roboto',sans-serif;
+  font-weight:700;
+  font-size: 30px;
+  text-align: center;
+  transition: all 0.15s;
   cursor: pointer;
+  transition: background 500ms ease-in;
 }
 
 .SSButton:hover,
 .SSButton:active {
   transition: background 250ms ease-out;
-  background: var(--active-color);
 }
