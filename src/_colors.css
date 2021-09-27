@@ -1,0 +1,31 @@
+:root {
+    --background-light: #dfdfdf; /* Background color for VariantA/B buttons */
+	--background-dark: #454545; /* Background color for VariantA/B buttons */
+
+    --color-header: #c1c1c1;  /* Header color */
+
+    --workoutList-color-light: #E2E2E2; /* Color scheme for the three buttons after chosing Variant A or B */
+    --workoutList-color-mid: #C4C4C4;   /* Color scheme for the three buttons after chosing Variant A or B */
+    --workoutList-color-dark: #747474;  /* Color scheme for the three buttons after chosing Variant A or B */
+
+    --savebutton-color: #C4C4C4;  /* Color scheme save button */
+    --savebutton-border: #747474; /* Color scheme save button */
+
+    --cancelbutton-color: #747474; /* Color scheme cancel button */
+    --cancelbutton-border: #E2E2E2; /* Color scheme cancel button */
+    --cancelbutton-text: #E2E2E2; /* Color scheme cancel button */
+
+    --ssbutton-border: #BBBBBB;
+    --active-input-border: #000;
+    --input-border: #BBBBBB;
+
+    /* --color-light: #E2E2E2;
+    --color-mid: #C4C4C4;
+    --color-dark: #747474; 
+    --default-color: #BBBBBB;
+    --active-color: #000;
+    --default-border: #BBBBBB;
+    --active-border: #000; */
+    
+    --size: 44px;
+  }

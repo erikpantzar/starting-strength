@@ -1,13 +1,8 @@
-:root {
-  --default-color: #BBBBBB;
-  --active-color: #000;
-}
-
 .SSButton {
   display:inline-block;
   height: 60px;
   width: 60px;
-  border: 2px solid var(--default-color);
+  border: 2px solid var(--ssbutton-border);
   box-sizing: border-box;
   text-decoration: none;
   text-transform: uppercase;
