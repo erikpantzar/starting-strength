@@ -11,7 +11,7 @@
 .SSInput:focus,
 .SSInput:active,
 .SSInput:hover {
-  border: 2px solid var(--active-input-border);
+  border: 2px solid var(--input-border-active);
   box-shadow: none;
   outline: none;
 }

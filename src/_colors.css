@@ -16,8 +16,8 @@
     --cancelbutton-text: #E2E2E2; /* Color scheme cancel button */
 
     --ssbutton-border: #BBBBBB;
-    --active-input-border: #000;
     --input-border: #BBBBBB;
+    --input-border-active: #000;
 
     /* --color-light: #E2E2E2;
     --color-mid: #C4C4C4;
@@ -26,6 +26,6 @@
     --active-color: #000;
     --default-border: #BBBBBB;
     --active-border: #000; */
-    
+
     --size: 44px;
   }
