@@ -1,12 +1,7 @@
-:root {
-  --default-border: #BBBBBB;
-  --active-border: #000;
-}
-
 .SSInput {
   box-sizing: border-box;
   line-height: 60px;
-  border: 2px solid var(--default-border);
+  border: 2px solid var(--input-border);
   text-align: center;
   width: 60px;
   height: 60px;
@@ -16,7 +11,7 @@
 .SSInput:focus,
 .SSInput:active,
 .SSInput:hover {
-  border: 2px solid var(--active-border);
+  border: 2px solid var(--input-border-active);
   box-shadow: none;
   outline: none;
 }

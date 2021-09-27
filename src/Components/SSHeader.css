@@ -1,7 +1,3 @@
-:root {
-  --color-light: #c1c1c1;
-}
-
 .SSHeader-separator {
   display: flex;
   align-items: center;
@@ -20,7 +16,7 @@
 }
 
 .SSHeader-details {
-  color: var(--color-light);
+  color: var(--color-header);
   font-size: 12px;
   font-weight: 700;
 }
@@ -30,7 +26,7 @@
 }
 
 .SSHeader-text {
-  color: var(--color-light);
+  color: var(--color-header);
   font-size: 12px;
   padding-right: 3px;
 }

@@ -1,9 +1,3 @@
-:root {
-  --color-light: #E2E2E2;
-  --color-mid: #C4C4C4;
-  --color-dark: #747474;
-}
-
 .WorkoutList {
   display: flex;
   height: 60vh;
@@ -19,17 +13,17 @@
 }
 
 .WorkoutList-link:nth-child(1) {
-  background: var(--color-light);
+  background: var(--workoutList-color-light);
   color: #000000;
 }
 
 .WorkoutList-link:nth-child(2) {
-  background: var(--color-mid);
+  background: var(--workoutList-color-mid);
   color: #000000;
 }
 
 .WorkoutList-link:nth-child(3) {
-  background: var(--color-dark);
+  background: var(--workoutList-color-dark);
   color: #FFFF;
 }
 

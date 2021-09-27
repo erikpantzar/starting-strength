@@ -1,7 +1,6 @@
 .container {
   height: 75vh;
   display: flex;
-
   flex-direction: column;
   justify-content: space-between;
 }
@@ -17,12 +16,6 @@
 
 }
 
-:root {
-  --color-light: #E2E2E2;
-  --color-mid: #C4C4C4;
-  --color-dark: #747474;
-}
-
 .form-button {
   display: block;
   width: 100%;
@@ -36,15 +29,15 @@
 }
 
 .button-primary {
-  background: var(--color-mid);
-  border: 2px solid var(--color-dark);
+  background: var(--savebutton-color);
+  border: 2px solid var(--savebutton-border);
   transition: background 500ms ease-in;
 }
 
 .button-ghost {
-  background: var(--color-dark);
-  border: 2px solid var(--color-light);
-  color: var(--color-light);
+  background: var(--cancelbutton-color);
+  border: 2px solid var(--cancelbutton-border);
+  color: var(--cancelbutton-text);
 }
 
 .form-button:hover,
