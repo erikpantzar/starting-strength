@@ -1,8 +1,12 @@
 body {
   font-family: Roboto, sans-serif;
+  margin: 0;
 }
 
 .App-container {
   max-width: 90vw;
+  max-width: 400px;
   padding: 2vh 5vw;
+  margin: 0 auto;
+  
 }
