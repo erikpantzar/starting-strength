@@ -1,6 +1,7 @@
 .container {
   width: 100%;
   display: flex;
+  justify-items: center;
   align-items: center;
   flex-direction: column;
 }
@@ -8,9 +9,8 @@
 .values {
   width: 80%;
   display: flex;
-  justify-content: space-between;
-  position: absolute;
-  top: 28vh;
+  justify-content: space-around;
+  margin-bottom: 2rem;
 }
 
 .input {
@@ -19,45 +19,23 @@
   text-align: center;
 }
 
-.submit-buttons {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  bottom: 0;
+.form-button {
+  width: 60%;
+  margin-bottom: 1rem;
+  line-height: 2.5;
+  cursor:  pointer;
 }
 
 :root {
-  --color-light: #E2E2E2;
-  --color-mid: #C4C4C4;
-  --color-dark: #747474;
-  --active-color: #000;
-}
-
-.form-button {
-  width: 95vw;
-  border: none;
-  font-weight: 700;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-family:'Roboto',sans-serif;
+  --color-primary: blue;
+  --color-ghost: #aaa;
 }
 
 .button-primary {
-  background: var(--color-mid);
-  border: 2px solid var(--color-dark);
-  height: 30vh;
-  transition: background 500ms ease-in;
+  background: var(--color-primary);
 }
 
 .button-ghost {
-  background: var(--color-dark);
-  border: 2px solid var(--color-light);
-  height: 15vh;
-  color: var(--color-light);
-  margin-bottom: 5px;
+  background: transparent;
+  border: 1px solid var(--color-ghost);
 }
-
-.form-button:hover,
-.form-button:active {
-  transition: background 250ms ease-out;
-}  

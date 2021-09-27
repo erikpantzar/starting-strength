@@ -1,13 +1,11 @@
 :root {
-  --default-border: #BBBBBB;
-  --active-border: #000;
+  --default-border: grey;
+  --active-border: blue;
 }
 
 .SSInput {
   border: 2px solid var(--default-border);
   text-align: center;
-  width: 60px;
-  font-weight: 700;
 }
 
 .SSInput:focus,
