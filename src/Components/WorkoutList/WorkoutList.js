@@ -3,31 +3,17 @@ import { Link } from "react-router-dom";
 import arrow from "./WorkoutList-arrow.svg";
 import "./WorkoutList.css";
 
-/* const workouts = [
-  {
-    name: "Bench",
-    status: "WORKOUT_DONE",
-  },
-  {
-    name: "Squats",
-    status: "",
-  },
-];
-*/
-
+// const workouts = ['bench', 'squats']
 const WorkoutList = ({ workouts, type }) => {
   return (
     <nav className="WorkoutList">
       {workouts.map((workout) => (
         <Link
-          className={[
-            "WorkoutList-link",
-            workout.status === "WORKOUT_DONE" && "WorkoutList-link--isDone",
-          ].join(" ")}
+          className="WorkoutList-link"
           key={workout}
-          to={`${type}/${workout.name}`}
+          to={`${type}/${workout}`}
         >
-          <span className="WorkoutList-link-text">{workout.name}</span>
+          <span className="WorkoutList-link-text">{workout}</span>
           <div className="WorkoutList-link-icon">
             <img src={arrow} alt="arrow" />
           </div>
