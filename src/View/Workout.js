@@ -1,5 +1,5 @@
 import React from "react";
-import WorkoutForm from "../Components/WorkoutForm";
+import WorkoutForm from "../Components/WorkoutForm/WorkoutForm";
 import { useParams } from "react-router-dom";
 import { useWorkout, useUpdateWorkout } from "../Context/workout-context";
 
