@@ -13,11 +13,11 @@ import Workout from './View/Workout'
 const Routes = () => (
   
     <Switch>
-      <Route exact path="/" component={Home}></Route>
-      <Route exact path="/workout/a" component={workoutA}></Route>
-      <Route exact path="/workout/a/:workout" component={Workout}></Route>
-      <Route exact path="/workout/b" component={workoutB}></Route>
-      <Route exact path="/workout/b/:workout" component={Workout}></Route>
+      <Route exact path="/" component={Home}/>
+      <Route exact path="/workout/a" component={workoutA}/>
+      <Route exact path="/workout/a/:workout" component={Workout}/>
+      <Route exact path="/workout/b" component={workoutB}/>
+      <Route exact path="/workout/b/:workout" component={Workout}/>
 
       <Redirect to="/" />
     </Switch>
