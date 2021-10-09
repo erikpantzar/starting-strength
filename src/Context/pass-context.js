@@ -23,13 +23,9 @@ function WorkoutsProvider({ children }) {
       : initialState
   );
 
+  // @Todo
+  // update this to be smarter
   function updateWorkouts(name, type) {
-    console.log({
-      name,
-      type,
-      workouts: workouts[type === "a" ? workouts[0] : workouts[1]],
-    });
-
     const updatedWorkouts =
       type === "a"
         ? [
@@ -107,21 +103,3 @@ function useReset() {
 }
 
 export { WorkoutsProvider, useWorkoutInfo, useUpdateWorkoutInfo, useReset };
-
-// example
-// 1. read values
-// import { useWorkout } from workoutContext
-// 2. extract the value you want for the excercise
-// const { bench } = useWorkout();
-// 3. display value in template
-// <div>{bench}</div>
-
-// example
-// 1. write to context
-// import { useUpdateWorkout } from workoutContext
-// 2. make the update feature available
-// const { handleWorkout } = useUpdateWorkout();
-// 3. call it
-// const handleUpdate = () => {
-//   handleWorkout("deadlift", 70);
-// };

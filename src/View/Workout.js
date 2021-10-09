@@ -12,7 +12,6 @@ const Workout = () => {
   const { updateWorkouts } = useUpdateWorkoutInfo();
 
   const handleSubmit = (wo, weight) => {
-    console.log({ wo, type });
     updateWorkouts(wo, type);
     handleWorkout(wo, weight);
   };
