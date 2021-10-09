@@ -1,10 +1,18 @@
-import WorkoutList from '../Components/WorkoutList/WorkoutList'
+import WorkoutList from "../Components/WorkoutList/WorkoutList";
+import { useWorkoutInfo, useReset } from "../Context/pass-context";
+import { useParams } from "react-router-dom";
 
+const Workout = () => {
+  const { type } = useParams();
+  const { ...workouts } = useWorkoutInfo();
+  const { reset } = useReset();
 
-const workouts = ['squats', 'deadlift', 'bench']
-
-const Workout = () => (
-  <WorkoutList workouts={workouts} type="a" />
-);
+  return (
+    <>
+      <WorkoutList workouts={workouts[type === "a" ? 0 : 1]} type={type} />
+      <button onClick={() => reset()}>Reset workout</button>
+    </>
+  );
+};
 
 export default Workout;
