@@ -7,7 +7,7 @@ const initialState = {
   deadlift: 120,
   squats: 60,
   press: 25,
-  pull: 35
+  pull: 35,
 };
 
 const WorkoutContext = createContext();

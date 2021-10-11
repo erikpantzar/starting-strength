@@ -1,4 +1,5 @@
 import ButtonGroup from "../Components/ButtonGroup/ButtonGroup";
+import Typography from "../Components/Typography/Typography";
 
 const workouts = [
   {
@@ -14,6 +15,10 @@ const workouts = [
 
 const Home = () => (
   <div>
+    <Typography variant="h1">
+      To get started, pick the variant of workout you would like to do today.
+    </Typography>
+
     <ButtonGroup links={workouts} />
   </div>
 );
