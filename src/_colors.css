@@ -11,9 +11,9 @@
     --savebutton-color: #C4C4C4;  /* Color scheme save button */
     --savebutton-border: #747474; /* Color scheme save button */
 
-    --cancelbutton-color: #747474; /* Color scheme cancel button */
-    --cancelbutton-border: #E2E2E2; /* Color scheme cancel button */
-    --cancelbutton-text: #E2E2E2; /* Color scheme cancel button */
+    --cancelbutton-color: #EFEFEF; /* Color scheme cancel button */
+    --cancelbutton-border: #CCCCCC; /* Color scheme cancel button */
+    --cancelbutton-text: #808080; /* Color scheme cancel button */
 
     --ssbutton-border: #BBBBBB;
     --input-border: #BBBBBB;

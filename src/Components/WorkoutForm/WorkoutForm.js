@@ -40,7 +40,7 @@ const WorkoutForm = ({ excercise, weight, onSubmit }) => {
       </div>
       <div>
         <button type="submit" className="form-button button-primary">
-          Save
+          Save & Continue
         </button>
         <button
           className="form-button button-ghost"
