@@ -9,12 +9,14 @@ const WorkoutList = ({ workouts, type }) => {
     <nav className="WorkoutList">
       {workouts.map((workout) => (
         <Link
-          className="WorkoutList-link"
+          className={[
+            "WorkoutList-link",
+            workout.state === "WORKOUT_DONE" ? "workout_isDone" : null,
+          ].join(" ")}
           key={workout.name}
           to={`${type}/${workout.name}`}
         >
           <span className="WorkoutList-link-text">{workout.name}</span>
-          {workout.state && workout.state}
           <div className="WorkoutList-link-icon">
             <img src={arrow} alt="arrow" />
           </div>
