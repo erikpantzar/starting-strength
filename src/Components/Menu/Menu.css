@@ -51,10 +51,6 @@
 		width: 420px;
 	}
 
-	.nav > * {
-
-	}
-
 	.nav.nav--isOpen {
 		transform: translateX(-50%);
 		opacity: 1;
