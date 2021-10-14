@@ -23,8 +23,8 @@ const Workout = () => {
     <div>
       <Typography variant="h1">{sentence()}</Typography>
       <WorkoutList workouts={WORKOUTS_ORDER[type]} type={type} />
+        <button onClick={() => reset()}>Reset workout</button>
     </div>
   );
 };
-
 export default Workout;

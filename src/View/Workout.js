@@ -1,18 +1,19 @@
-import React, { useState } from "react";
-import { Redirect, useParams } from "react-router-dom";
+import React from "react";
 import WorkoutForm from "../Components/WorkoutForm/WorkoutForm";
+import { useParams } from "react-router-dom";
 import { useWorkout, useUpdateWorkout } from "../Context/workout-context";
+import { useUpdateWorkoutInfo } from "../Context/pass-context";
 import { WORKOUTS_ORDER, WORKOUTS_SET_AND_REPS } from "../contants";
 
 const Workout = () => {
-  const [redirect, setRedirect] = useState(null);
-  const { workout, type } = useParams();
+  const { workout } = useParams();
   const { ...workouts } = useWorkout();
   const { handleWorkout } = useUpdateWorkout();
 
+  const { updateWorkouts } = useUpdateWorkoutInfo();
+
   const handleSubmit = (wo, weight) => {
     handleWorkout(wo, weight);
-    setRedirect(`/workout/${type}`)
   };
 
   return (
@@ -28,8 +29,6 @@ const Workout = () => {
         weight={workouts[workout]}
         onSubmit={handleSubmit}
       />
-
-      {redirect && <Redirect to={redirect} />}
     </div>
   );
 };
