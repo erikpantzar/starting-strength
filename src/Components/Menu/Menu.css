@@ -42,6 +42,25 @@
 	transform: translateX(10vw);
 }
 
+@media (min-width: 440px) {
+	.nav {
+		transition: transform 120ms ease-in-out, opacity 120ms ease-in-out;
+		transform: translateX(100vw);
+		opacity: 0;
+		left: 50%;
+		width: 420px;
+	}
+
+	.nav > * {
+
+	}
+
+	.nav.nav--isOpen {
+		transform: translateX(-50%);
+		opacity: 1;
+	}
+}
+
 .nav article {
 	top: 44px;
 	padding-top: 2em;
