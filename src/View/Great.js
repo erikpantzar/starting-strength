@@ -12,7 +12,7 @@ const Great = () => {
 
   useEffect(() => {
     reset()
-  }, [workouts])
+  })
 
   const exc = WORKOUTS_ORDER[type]
   const total =

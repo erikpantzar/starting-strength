@@ -4,6 +4,7 @@ import { useParams, Redirect } from 'react-router-dom'
 import { useWorkout, useUpdateWorkout } from '../Context/workout-context'
 import { useUpdateWorkoutInfo } from '../Context/pass-context'
 import { WORKOUTS_SET_AND_REPS } from '../contants'
+import BackNav from '../Components/BackNav/BackNav'
 
 const Workout = () => {
   const { workout, type } = useParams()
@@ -26,6 +27,7 @@ const Workout = () => {
 
   return (
     <div>
+      <BackNav route={{ url: `/workout/${type}`, name: 'Back' }} />
       <h1 style={{ textTransform: 'Capitalize' }}>{workout}</h1>
       <h2>
         Here you should do {workout} for {WORKOUTS_SET_AND_REPS[workout][0]}{' '}

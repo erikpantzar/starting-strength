@@ -55,11 +55,6 @@ function WorkoutsProvider({ children }) {
             }),
           ]
 
-    const typeToIndex = type === 'a' ? 0 : 1
-    const finishedOfType = updatedWorkouts[typeToIndex].filter(
-      (el) => el.state === 'WORKOUT_DONE'
-    ).length
-
     setWorkouts(updatedWorkouts)
     localStorage.setItem('pass', JSON.stringify(updatedWorkouts))
   }

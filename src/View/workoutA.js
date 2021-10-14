@@ -3,6 +3,7 @@ import { Redirect, useParams } from 'react-router-dom'
 import WorkoutList from '../Components/WorkoutList/WorkoutList'
 import Typography from '../Components/Typography/Typography'
 import { useWorkoutInfo, useReset } from '../Context/pass-context'
+import BackNav from '../Components/BackNav/BackNav'
 
 const Workout = () => {
   const { reset } = useReset()
@@ -32,7 +33,7 @@ const Workout = () => {
     if (finishedNumberOfWorkouts === workouts[typeToIndex].length) {
       setRedirect(`/workout/${type}/finished`)
     }
-  })
+  }, [finishedNumberOfWorkouts, workouts, typeToIndex, type])
 
   if (redirect) {
     return <Redirect to={redirect} />
@@ -40,6 +41,7 @@ const Workout = () => {
 
   return (
     <div>
+      <BackNav route={{ url: `/`, name: 'Back' }} />
       <Typography variant="h1">{sentence()}</Typography>
       <WorkoutList workouts={workouts[type === 'a' ? 0 : 1]} type={type} />
       <button type="button" onClick={() => reset()}>

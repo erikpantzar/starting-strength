@@ -3,17 +3,8 @@ import './WorkoutForm.css'
 import SSButton from '../SSButton/SSButton'
 import SSInput from '../SSInput/SSInput'
 import arrow from './WorkoutForm-arrow.svg'
-// Todo
-// 1. set weight to localState variable called updatedWeight
-// 2. function to change value of updatedWieght
-// 3. get Save button to trigger onSubmit method with excercise and value
-// 4. put updatedValue in input as defaultValue
-// 5. make it pretty (flexbox ffs)
 
 const WorkoutForm = ({ excercise, weight, onSubmit }) => {
-  // console.log({ excercise, weight, onSubmit });
-  // magical destructuring
-
   const [updatedWeight, setUpdatedWeight] = useState(weight)
 
   // gets modifier to change the local variable with
