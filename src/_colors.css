@@ -15,7 +15,6 @@
     --cancelbutton-border: #CCCCCC; /* Color scheme cancel button */
     --cancelbutton-text: #808080; /* Color scheme cancel button */
 
-    --ssbutton-border: #BBBBBB;
     --input-border: #BBBBBB;
     --input-border-active: #000;
 
@@ -26,6 +25,12 @@
 
     --color-variant-a: #FFBDA8;
     --color-variant-b: #FFE792;
+
+    --color-ssbutton: #FFC6B4;
+    --color-ssbutton-border: #FFB0B0;
+
+    --color-input: #E9F3FF;
+    --color-input-border: #C9C9C9;
     /* --color-light: #E2E2E2;
     --color-mid: #C4C4C4;
     --color-dark: #747474; 

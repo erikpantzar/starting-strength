@@ -6,7 +6,7 @@
 }
 
 .values {
-  align-items: flex-end;
+  align-items: center;
   height: 20vh;
   display: flex;
   justify-content: space-between;
