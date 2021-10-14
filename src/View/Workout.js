@@ -3,6 +3,7 @@ import WorkoutForm from "../Components/WorkoutForm/WorkoutForm";
 import { useParams } from "react-router-dom";
 import { useWorkout, useUpdateWorkout } from "../Context/workout-context";
 import { useUpdateWorkoutInfo } from "../Context/pass-context";
+import BackNav from "../Components/BackNav/BackNav";
 
 const Workout = () => {
   const { workout, type } = useParams();
@@ -18,6 +19,7 @@ const Workout = () => {
 
   return (
     <div>
+      <BackNav route={{ url: `/workout/${type}`, name: "Back" }}></BackNav>
       <h1 style={{ textTransform: "Capitalize" }}>{workout}</h1>
       <WorkoutForm
         excercise={workout}
