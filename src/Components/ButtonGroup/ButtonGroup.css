@@ -13,12 +13,11 @@
 	justify-content: center;
 	height: 100%;
 	box-sizing: border-box;
-	background: var(--background-light);
-	font: 500 18px/1 Roboto, sans-serif;
+	background: var(--color-variant-a);
+	font: 700 18px/1 Roboto, sans-serif;
 	color: black;
 }
 
 .ButtonGroup-link:nth-child(2) {
-	background: var(--background-dark);
-	color: #EBEBEB;
+	background: var(--color-variant-b);
 }

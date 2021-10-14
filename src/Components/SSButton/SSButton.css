@@ -1,8 +1,9 @@
 .SSButton {
   display:inline-block;
-  height: 60px;
-  width: 60px;
-  border: 2px solid var(--ssbutton-border);
+  height: 70px;
+  width: 92px;
+  border: 2px solid var(--color-ssbutton-border);
+  background-color: var(--color-ssbutton);
   box-sizing: border-box;
   text-decoration: none;
   text-transform: uppercase;
