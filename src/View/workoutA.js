@@ -1,9 +1,11 @@
+import { useParams } from "react-router-dom";
 import WorkoutList from "../Components/WorkoutList/WorkoutList";
 import Typography from "../Components/Typography/Typography";
-import { useParams } from "react-router-dom";
-import { WORKOUTS_ORDER } from "../contants";
+import { useWorkoutInfo, useReset } from "../Context/pass-context";
 
 const Workout = () => {
+  const { reset } = useReset();
+    const { ...workouts } = useWorkoutInfo();
   const { type } = useParams();
 
   const sentence = () => {
@@ -22,8 +24,8 @@ const Workout = () => {
   return (
     <div>
       <Typography variant="h1">{sentence()}</Typography>
-      <WorkoutList workouts={WORKOUTS_ORDER[type]} type={type} />
-        <button onClick={() => reset()}>Reset workout</button>
+        <WorkoutList workouts={workouts[type === "a" ? 0 : 1]} type={type} />
+        <button type="button" onClick={() => reset()}>Reset workout</button>
     </div>
   );
 };
