@@ -1,17 +1,17 @@
-import ButtonGroup from "../Components/ButtonGroup/ButtonGroup";
-import Typography from "../Components/Typography/Typography";
+import ButtonGroup from '../Components/ButtonGroup/ButtonGroup'
+import Typography from '../Components/Typography/Typography'
 
 const workouts = [
   {
-    text: "Variant A",
-    url: "workout/a",
+    text: 'Variant A',
+    url: 'workout/a',
   },
 
   {
-    text: "Variant B",
-    url: "workout/b",
+    text: 'Variant B',
+    url: 'workout/b',
   },
-];
+]
 
 const Home = () => (
   <div>
@@ -21,6 +21,6 @@ const Home = () => (
 
     <ButtonGroup links={workouts} />
   </div>
-);
+)
 
-export default Home;
+export default Home

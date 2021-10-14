@@ -1,4 +1,4 @@
-import "./SSInput.css";
+import './SSInput.css'
 
 const SSInput = ({ weight, onChange }) => {
   return (
@@ -6,10 +6,10 @@ const SSInput = ({ weight, onChange }) => {
       className="SSInput"
       value={weight}
       onChange={(event) => {
-        onChange(event.target.value);
+        onChange(event.target.value)
       }}
     />
-  );
-};
+  )
+}
 
-export default SSInput;
+export default SSInput

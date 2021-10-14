@@ -1,5 +1,5 @@
-import React from "react";
-import "./Item.css";
+import React from 'react'
+import './Item.css'
 
 const Item = ({ workout, weight, details }) => {
   return (
@@ -16,7 +16,7 @@ const Item = ({ workout, weight, details }) => {
         </h1>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Item;
+export default Item
