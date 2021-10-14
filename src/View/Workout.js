@@ -13,18 +13,7 @@ const Workout = () => {
   const handleSubmit = (wo, weight) => {
     handleWorkout(wo, weight);
 
-    // navigate to next exercise OR finished
-    const workoutIndex = WORKOUTS_ORDER[type].indexOf(workout);
-    const allWorkouts = WORKOUTS_ORDER[type].length;
-
-    if (workoutIndex + 1 >= allWorkouts) {
-      setRedirect(`/workout/${type}/finished`);
-    } else {
-      // @ Todo
-      // Solve check that checks what exercise has been done and not
-      const nextExercise = WORKOUTS_ORDER[type][workoutIndex + 1];
-      setRedirect(`/workout/${type}/${nextExercise}`);
-    }
+    setRedirect(`/workout/${type}`)
   };
 
   return (
