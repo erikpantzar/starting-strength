@@ -1,14 +1,10 @@
-import React from "react";
-import {
-  Redirect,
-  Switch,
-  Route
-} from "react-router-dom";
+import React from 'react'
+import { Redirect, Switch, Route } from 'react-router-dom'
 
-import Home from "./View/Home";
-import workoutA from "./View/workoutA";
-import Workout from "./View/Workout";
-import Great from "./View/Great";
+import Home from './View/Home'
+import workoutA from './View/workoutA'
+import Workout from './View/Workout'
+import Great from './View/Great'
 
 const Routes = () => (
   <Switch>
@@ -17,8 +13,8 @@ const Routes = () => (
     <Route exact path="/workout/:type/finished" component={Great} />
     <Route exact path="/workout/:type/:workout" component={Workout} />
 
-      <Redirect to="/" />
-    </Switch>
-);
+    <Redirect to="/" />
+  </Switch>
+)
 
 export default Routes

@@ -13,18 +13,23 @@
 }
 
 .WorkoutList-link:nth-child(1) {
-  background: var(--workoutList-color-light);
-  color: #000000;
+  background: var(--color-main-cta);
+  color: #FFFF;
 }
 
 .WorkoutList-link:nth-child(2) {
-  background: var(--workoutList-color-mid);
-  color: #000000;
+  background: var(--color-second-cta);
+  color: #FFFF;
 }
 
 .WorkoutList-link:nth-child(3) {
-  background: var(--workoutList-color-dark);
+  background: var(--color-third-cta);
   color: #FFFF;
+}
+
+.WorkoutList-link.workout_isDone {
+  background: var(--color-fourth-cta);
+  color: #004699;
 }
 
 .WorkoutList-link-text {
