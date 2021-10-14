@@ -1,22 +1,22 @@
 .SSButton {
-  display:inline-block;
-  height: 70px;
-  width: 92px;
-  border: 2px solid var(--color-ssbutton-border);
-  background-color: var(--color-ssbutton);
-  box-sizing: border-box;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family:'Roboto',sans-serif;
-  font-weight:700;
-  font-size: 30px;
-  text-align: center;
-  transition: all 0.15s;
-  cursor: pointer;
-  transition: background 500ms ease-in;
+    display: inline-block;
+    height: 70px;
+    width: 92px;
+    border: 2px solid var(--color-ssbutton-border);
+    background-color: var(--color-ssbutton);
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    transition: all 0.15s;
+    cursor: pointer;
+    transition: background 500ms ease-in;
 }
 
 .SSButton:hover,
 .SSButton:active {
-  transition: background 250ms ease-out;
+    transition: background 250ms ease-out;
 }

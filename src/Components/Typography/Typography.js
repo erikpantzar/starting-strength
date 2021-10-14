@@ -1,18 +1,13 @@
-import React from "react";
-import "./Typography.css";
+import React from 'react'
+import './Typography.css'
 
-const Typography = ({
-  variant = "p",
-  color = "black",
-  styles = {},
-  children,
-}) => {
+const Typography = ({ variant = 'p', color = 'black', styles, children }) => {
   const element = React.createElement(
     variant,
     { className: `Typography-${variant}` },
     children
-  );
-  return element;
-};
+  )
+  return element
+}
 
-export default Typography;
+export default Typography

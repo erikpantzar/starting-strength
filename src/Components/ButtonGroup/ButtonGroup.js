@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./ButtonGroup.css";
-import arrowBlack from "./wide-arrow-black.svg";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import './ButtonGroup.css'
+import arrowBlack from './wide-arrow-black.svg'
 
 // const links = [{ text, url }]
 const ButtonGroup = ({ links }) => (
@@ -15,6 +15,6 @@ const ButtonGroup = ({ links }) => (
       </Link>
     ))}
   </nav>
-);
+)
 
-export default ButtonGroup;
+export default ButtonGroup

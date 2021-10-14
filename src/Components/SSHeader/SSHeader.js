@@ -1,9 +1,9 @@
-import "./SSHeader.css";
+import './SSHeader.css'
 
 const SSHeader = ({ workout, details, historicWeight }) => (
   <header className="SSheader">
     <div className="SSHeader-separator">
-      <h1 className="SSHeader-title">{workout}</h1>{" "}
+      <h1 className="SSHeader-title">{workout}</h1>{' '}
       <span className="SSHeader-details">{details}</span>
     </div>
     <div className="SSHeader-bottom">
@@ -14,6 +14,6 @@ const SSHeader = ({ workout, details, historicWeight }) => (
       </p>
     </div>
   </header>
-);
+)
 
-export default SSHeader;
+export default SSHeader
