@@ -12,7 +12,6 @@ const Workout = () => {
 
   const handleSubmit = (wo, weight) => {
     handleWorkout(wo, weight);
-
     setRedirect(`/workout/${type}`)
   };
 
