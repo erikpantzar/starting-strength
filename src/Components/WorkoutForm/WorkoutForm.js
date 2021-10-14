@@ -1,8 +1,8 @@
-import { useState } from "react";
-import "./WorkoutForm.css";
-import SSButton from "../SSButton/SSButton";
-import SSInput from "../SSInput/SSInput";
-import arrow from "./WorkoutForm-arrow.svg";
+import { useState } from 'react'
+import './WorkoutForm.css'
+import SSButton from '../SSButton/SSButton'
+import SSInput from '../SSInput/SSInput'
+import arrow from './WorkoutForm-arrow.svg'
 // Todo
 // 1. set weight to localState variable called updatedWeight
 // 2. function to change value of updatedWieght
@@ -14,24 +14,24 @@ const WorkoutForm = ({ excercise, weight, onSubmit }) => {
   // console.log({ excercise, weight, onSubmit });
   // magical destructuring
 
-  const [updatedWeight, setUpdatedWeight] = useState(weight);
+  const [updatedWeight, setUpdatedWeight] = useState(weight)
 
   // gets modifier to change the local variable with
   const changeWeight = (value) => {
-    setUpdatedWeight(parseFloat(updatedWeight) + value);
-  };
+    setUpdatedWeight(parseFloat(updatedWeight) + value)
+  }
 
   const handleSubmit = () => {
     // if all, good submit
-    onSubmit(excercise, updatedWeight);
-  };
+    onSubmit(excercise, updatedWeight)
+  }
 
   return (
     <form
       className="container"
       onSubmit={(event) => {
-        event.preventDefault(event);
-        handleSubmit();
+        event.preventDefault(event)
+        handleSubmit()
       }}
     >
       <div className="values">
@@ -42,7 +42,8 @@ const WorkoutForm = ({ excercise, weight, onSubmit }) => {
       <div className="buttongroup-style">
         <button type="submit" className="form-button button-primary">
           <span className="primary-style">
-            Save & Continue <img alt="arrow" src={arrow} />
+            Save & Continue{' '}
+            <img className="arrow-icon" alt="arrow" src={arrow} />
           </span>
         </button>
         <button
@@ -53,9 +54,9 @@ const WorkoutForm = ({ excercise, weight, onSubmit }) => {
         </button>
       </div>
     </form>
-  );
-};
+  )
+}
 
-export default WorkoutForm;
+export default WorkoutForm
 
 //weight: {updatedWeight}
