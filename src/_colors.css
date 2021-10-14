@@ -8,8 +8,8 @@
     --workoutList-color-mid: #C4C4C4;   /* Color scheme for the three buttons after chosing Variant A or B */
     --workoutList-color-dark: #747474;  /* Color scheme for the three buttons after chosing Variant A or B */
 
-    --savebutton-color: #C4C4C4;  /* Color scheme save button */
-    --savebutton-border: #747474; /* Color scheme save button */
+    /* --savebutton-color: #C4C4C4;
+    --savebutton-border: #747474;  */
 
     --cancelbutton-color: #EFEFEF; /* Color scheme cancel button */
     --cancelbutton-border: #CCCCCC; /* Color scheme cancel button */
@@ -24,6 +24,8 @@
     --color-third-cta: #9DCAFF;
     --color-fourth-cta: #D6E9FF;
 
+    --color-variant-a: #FFBDA8;
+    --color-variant-b: #FFE792;
     /* --color-light: #E2E2E2;
     --color-mid: #C4C4C4;
     --color-dark: #747474; 

@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./WorkoutForm.css";
 import SSButton from "../SSButton/SSButton";
 import SSInput from "../SSInput/SSInput";
+import arrow from "./WorkoutForm-arrow.svg";
 // Todo
 // 1. set weight to localState variable called updatedWeight
 // 2. function to change value of updatedWieght
@@ -38,9 +39,11 @@ const WorkoutForm = ({ excercise, weight, onSubmit }) => {
         <SSInput weight={updatedWeight} onChange={setUpdatedWeight} />
         <SSButton onClick={() => changeWeight(2.5)}>+</SSButton>
       </div>
-      <div>
+      <div className="buttongroup-style">
         <button type="submit" className="form-button button-primary">
-          Save & Continue
+          <span className="primary-style">
+            Save & Continue <img alt="arrow" src={arrow} />
+          </span>
         </button>
         <button
           className="form-button button-ghost"
