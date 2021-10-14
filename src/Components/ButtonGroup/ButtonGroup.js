@@ -1,8 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./ButtonGroup.css";
-import arrowWhite from "./wide-arrow-white.svg";
-import arrowBlack from "./wide-arrow-black.svg";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import './ButtonGroup.css'
+import arrowBlack from './wide-arrow-black.svg'
 
 // const links = [{ text, url }]
 const ButtonGroup = ({ links }) => (
@@ -11,11 +10,11 @@ const ButtonGroup = ({ links }) => (
       <Link key={link.text} className="ButtonGroup-link" to={link.url}>
         <span className="ButtonGroup-text">{link.text}</span>
         <div className="ButtonGroup-arrow">
-          <img alt="arrow" src={index === 0 ? arrowBlack : arrowWhite} />
+          <img alt="arrow" src={arrowBlack} />
         </div>
       </Link>
     ))}
   </nav>
-);
+)
 
-export default ButtonGroup;
+export default ButtonGroup

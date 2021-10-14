@@ -1,21 +1,24 @@
-import SSButton from "./SSButton";
+import SSButton from './SSButton'
 
 export default {
-	title: "Component/Button",
-	component: SSButton,
-};
-
+  title: 'Component/Button',
+  component: SSButton,
+}
 
 const Template = (args) => <SSButton {...args} />
 
 export const One = Template.bind({})
 One.args = {
-	children: 5,
-	onClick: () => { console.log('Hejje')}
+  children: 5,
+  onClick: () => {
+    console.log('Hejje')
+  },
 }
 
 export const Two = Template.bind({})
 Two.args = {
-	children: '-5',
-	onClick: () => { console.log('hejjjee')}
+  children: '-5',
+  onClick: () => {
+    console.log('hejjjee')
+  },
 }

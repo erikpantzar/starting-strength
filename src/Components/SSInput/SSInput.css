@@ -1,17 +1,19 @@
 .SSInput {
-  box-sizing: border-box;
-  line-height: 60px;
-  border: 2px solid var(--input-border);
-  text-align: center;
-  width: 60px;
-  height: 60px;
-  font-weight: 700;
+    box-sizing: border-box;
+    line-height: 81px;
+    border: 2px solid var(--color-input-border);
+    background-color: var(--color-input);
+    text-align: center;
+    width: 118px;
+    height: 81px;
+    font-size: 36px;
+    font-weight: 500;
 }
 
 .SSInput:focus,
 .SSInput:active,
 .SSInput:hover {
-  border: 2px solid var(--input-border-active);
-  box-shadow: none;
-  outline: none;
+    border: 2px solid var(--input-border-active);
+    box-shadow: none;
+    outline: none;
 }

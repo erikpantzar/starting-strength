@@ -1,14 +1,14 @@
-import Typography from "./Typography";
+import Typography from './Typography'
 
 export default {
-	title: "Component/Typography",
-	component: Typography,
-};
+  title: 'Component/Typography',
+  component: Typography,
+}
 
 export const Samples = () => (
-	<div>
-		<Typography variant="h2">Submit your load</Typography>
+  <div>
+    <Typography variant="h2">Submit your load</Typography>
 
-		<Typography variant="h3">last week you put 75</Typography>
-	</div>
-);
+    <Typography variant="h3">last week you put 75</Typography>
+  </div>
+)
