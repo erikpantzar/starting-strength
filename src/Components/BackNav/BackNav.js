@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./BackNav.css";
-import BackNavArrow from "./BackNav.svg";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import './BackNav.css'
+import BackNavArrow from './BackNav.svg'
 
 const BackNav = ({ route }) => {
   return (
@@ -10,7 +10,7 @@ const BackNav = ({ route }) => {
 
       <span className="BackNav-text">{route.name}</span>
     </Link>
-  );
-};
+  )
+}
 
-export default BackNav;
+export default BackNav
