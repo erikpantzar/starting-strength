@@ -13,7 +13,8 @@
 
 .BackNav-text {
     text-decoration: none;
-    color: #666;
+    color: #000;
+    font-weight: 700;
     font-size: 14px;
     line-height: 24px;
     display: inline-block;
