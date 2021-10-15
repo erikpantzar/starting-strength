@@ -4,7 +4,6 @@
     justify-content: flex-start;
     text-decoration: none;
     margin: 12px 0;
-    opacity: 0.7;
 }
 
 .BackNav-arrow {
@@ -13,7 +12,7 @@
 
 .BackNav-text {
     text-decoration: none;
-    color: #666;
+    color: #000;
     font-size: 14px;
     line-height: 24px;
     display: inline-block;
