@@ -1,6 +1,6 @@
 .WorkoutList {
     display: flex;
-    height: 40vh;
+    height: 270px;
     flex-direction: column;
 }
 
