@@ -3,13 +3,13 @@ import { createContext, useState, useContext } from 'react'
 const initialState = [
   [
     { name: 'squats', state: '' },
-    { name: 'press', state: '' },
-    { name: 'pull', state: '' },
+    { name: 'deadlift', state: '' },
+    { name: 'bench', state: '' },
   ],
   [
     { name: 'squats', state: '' },
-    { name: 'deadlift', state: '' },
-    { name: 'bench', state: '' },
+    { name: 'press', state: '' },
+    { name: 'pull', state: '' },
   ],
 ]
 
