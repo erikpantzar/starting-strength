@@ -1,4 +1,4 @@
-import { React, useState } from 'react'
+import { React } from 'react'
 import { Link } from 'react-router-dom'
 import doing from './doing-dot.svg'
 import done from './done-dot.svg'
