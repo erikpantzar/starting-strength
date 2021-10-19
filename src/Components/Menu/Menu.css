@@ -4,6 +4,12 @@
     --z-backdrop: 4;
 }
 
+.navLink {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
 .Toggler {
     transform: rotate(90deg);
     height: var(--size);
