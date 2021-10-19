@@ -1,15 +1,39 @@
 .WorkoutList {
     display: flex;
-    height: 60vh;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
 }
 
 .WorkoutList-link {
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
-    align-items: center;
-    text-transform: capitalize;;
+    text-decoration: none;
+    height: 107px;
+    width: 152px;
+    text-transform: capitalize;
+    border-radius: 0px 7px;
+    margin: 5px;
+    position: relative;
+    }
+
+.workout {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.reps {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.weight {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-weight: 900;
+    font-size: 32px;
+    transform: translate(-50%, -50%);
 }
 
 .WorkoutList-link:nth-child(1) {
@@ -18,26 +42,27 @@
 }
 
 .WorkoutList-link:nth-child(2) {
-    background: var(--color-second-cta);
+    background: var(--color-main-cta);
     color: #FFFF;
 }
 
 .WorkoutList-link:nth-child(3) {
-    background: var(--color-third-cta);
+    background: var(--color-main-cta);
     color: #FFFF;
 }
 
 .WorkoutList-link.workout_isDone {
-    background: var(--color-fourth-cta);
-    color: #004699;
+    background: var(--color-main-cta);
+    color: #FFF;
 }
 
 .WorkoutList-link-text {
-    font-weight: 900;
-    font-size: 24px;
-    margin-left: 3vh;
+    font-weight: 400;
+    font-size: 12px;
 }
 
 .WorkoutList-link-icon {
-    margin-right: 3vh;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
 }

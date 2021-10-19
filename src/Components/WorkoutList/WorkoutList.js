@@ -1,14 +1,15 @@
-import React from 'react'
+import { React, useState } from 'react'
 import { Link } from 'react-router-dom'
-import arrow from './WorkoutList-arrow.svg'
-import checkmark from './checkmark.svg'
+import doing from './doing-dot.svg'
+import done from './done-dot.svg'
+import { WORKOUTS_SET_AND_REPS } from '../../contants.js'
 import './WorkoutList.css'
 
 // const workouts = ['bench', 'squats']
 const WorkoutList = ({ workouts, type }) => {
   return (
     <nav className="WorkoutList">
-      {workouts.map((workout) => (
+      {workouts.map((workout, weight) => (
         <Link
           className={[
             'WorkoutList-link',
@@ -17,15 +18,19 @@ const WorkoutList = ({ workouts, type }) => {
           key={workout.name}
           to={`${type}/${workout.name}`}
         >
-          <span className="WorkoutList-link-text">{workout.name}</span>
-
+          <span className="WorkoutList-link-text workout">{workout.name}</span>
+          <span className="WorkoutList-link-text reps">
+            {WORKOUTS_SET_AND_REPS[workout.name][0]}x
+            {WORKOUTS_SET_AND_REPS[workout.name][1]}
+          </span>
+          <span className="weight">{weight}kg</span>
           {workout.state === 'WORKOUT_DONE' ? (
             <div className="WorkoutList-link-icon">
-              <img src={checkmark} alt="checkmark" />
+              <img src={done} alt="done" />
             </div>
           ) : (
             <div className="WorkoutList-link-icon">
-              <img src={arrow} alt="arrow" />
+              <img src={doing} alt="doing" />
             </div>
           )}
         </Link>
