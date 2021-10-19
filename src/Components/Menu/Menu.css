@@ -4,7 +4,7 @@
     --z-backdrop: 4;
 }
 
-.Toggler {
+.Menu-Toggler {
     transform: rotate(90deg);
     height: var(--size);
     width: var(--size);
@@ -18,12 +18,12 @@
     z-index: var(--z-toggler);
 }
 
-.Toggler.Toggler--active {
+.Menu-Toggler.Menu-Toggler--active {
     transform: rotate(0);
     transition: transform 100ms ease-in-out;
 }
 
-.nav {
+.Menu-nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -32,18 +32,18 @@
     width: 90vw;
     height: 100vh;
     box-sizing: border-box;
-    padding: 2vh 5vw;
+    padding: 2rem 1.2rem;
     background: #fff;
     color: #000;
     transition: transform 120ms ease-in-out;
 }
 
-.nav.nav--isOpen {
+.Menu-nav.Menu-nav--isOpen {
     transform: translateX(10vw);
 }
 
 @media (min-width: 440px) {
-	.nav {
+	.Menu-nav {
 		transition: transform 120ms ease-in-out, opacity 120ms ease-in-out;
 		transform: translateX(100vw);
 		opacity: 0;
@@ -51,20 +51,20 @@
 		width: 420px;
 	}
 
-	.nav.nav--isOpen {
+	.Menu-nav.Menu-nav--isOpen {
 		transform: translateX(-50%);
 		opacity: 1;
 	}
 }
 
-.nav article {
+.Menu-nav article {
     top: 44px;
     padding-top: 2em;
     position: relative;
     z-index: var(--z-nav);
 }
 
-.Nav-backdrop {
+.Menu-backdrop {
     background: rgba(0, 0, 0, 0.5);
     width: 100vw;
     height: 100vh;
@@ -79,7 +79,7 @@
     transition: opacity 150ms ease-out;
 }
 
-.Nav-backdrop.nav--isOpen {
+.Menu-backdrop.Menu--isOpen {
     opacity: 1;
     pointer-events: auto;
     transition: opacity 200ms ease-out;

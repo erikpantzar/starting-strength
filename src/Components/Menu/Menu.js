@@ -1,7 +1,7 @@
 import './Menu.css'
 import { useState } from 'react'
 
-export const Toggler = () => {
+export const Menu = () => {
   const [open, setOpen] = useState(false)
 
   const handleToggle = () => {
@@ -11,18 +11,24 @@ export const Toggler = () => {
   return (
     <>
       <div
-        className={['Nav-backdrop', open && 'nav--isOpen'].join(' ')}
+        className={['Menu-backdrop', open && 'Menu--isOpen'].join(' ')}
         onClick={() => setOpen(!open)}
       />
       <button
         type="button"
         onClick={() => handleToggle()}
-        className={['Toggler', (open && 'Toggler--active': null)].join(' ')}
+        className={[
+          'Menu-Toggler',
+          (open && 'Menu-Toggler--active': null),
+        ].join(' ')}
       >
         II
       </button>
       <nav
-        className={['nav', open ? 'nav--isOpen' : 'nav--isClosed'].join(' ')}
+        className={[
+          'Menu-nav',
+          open ? 'Menu-nav--isOpen' : 'Menu-nav--isClosed',
+        ].join(' ')}
       >
         <article>
           <h2>What is Starting strength?</h2>
@@ -36,4 +42,4 @@ export const Toggler = () => {
   )
 }
 
-export default Toggler
+export default Menu
