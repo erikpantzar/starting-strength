@@ -33,7 +33,7 @@ export const Menu = () => {
         <article>
           <h2>What is Starting strength?</h2>
           <p>
-            A workout program to get you started with basic excersices and get
+            A workout program to get you started with basic exercises and get
             stronger!
           </p>
         </article>
