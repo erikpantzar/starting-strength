@@ -3,7 +3,7 @@ import BackNav from '../Components/BackNav/BackNav'
 
 const About = () => (
   <div>
-    <BackNav route={{ url: `/`, name: 'Back' }} />
+    <BackNav route={{ name: 'Back' }} />
     <Typography>
       Starting Strength is a workout program that gives you the most value for
       time spent in the gym. It is used by both It consist of 5 exercises and
