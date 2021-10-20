@@ -19,7 +19,7 @@ export const Toggler = () => {
       <button
         type="button"
         onClick={() => handleToggle()}
-        className={['Toggler', (open && 'Toggler--active': null)].join(' ')}
+        className={['Toggler', open && 'Toggler--active'].join(' ')}
       >
         II
       </button>
@@ -32,7 +32,7 @@ export const Toggler = () => {
             Starting Strength is a workout program that gives you the most value
             for time spent in the gym.
           </Typography>
-          <Link className="navLink" to="/about">
+          <Link className="navLink" to="/about" onClick={() => setOpen(false)}>
             Read More
           </Link>
           <Typography variant="h2">How does this app work?</Typography>
@@ -41,7 +41,11 @@ export const Toggler = () => {
             Remember it is not supposed to be the same as the last time you
             worked out.
           </Typography>
-          <Link className="navLink" to="/tutorial">
+          <Link
+            className="navLink"
+            to="/tutorial"
+            onClick={() => setOpen(false)}
+          >
             Read More
           </Link>
         </article>
