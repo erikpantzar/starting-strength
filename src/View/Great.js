@@ -4,6 +4,7 @@ import Typography from '../Components/Typography/Typography'
 import { useWorkout } from '../Context/workout-context'
 import { useReset } from '../Context/pass-context'
 import { WORKOUTS_ORDER, WORKOUTS_SET_AND_REPS } from '../contants'
+import Button from '../Components/Button/Button'
 
 const Great = () => {
   const { ...workouts } = useWorkout()
@@ -51,7 +52,9 @@ const Great = () => {
         And the total working volume result is {total}kgs!!
       </Typography>
 
-      <Link to="/">Done</Link>
+      <Button variant="primary" to="/">
+        Done
+      </Button>
     </div>
   )
 }

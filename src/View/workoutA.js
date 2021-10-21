@@ -4,6 +4,7 @@ import WorkoutList from '../Components/WorkoutList/WorkoutList'
 import Typography from '../Components/Typography/Typography'
 import { useWorkoutInfo, useReset } from '../Context/pass-context'
 import BackNav from '../Components/BackNav/BackNav'
+import Button from '../Components/Button/Button'
 
 const Workout = () => {
   const { reset } = useReset()
@@ -44,9 +45,10 @@ const Workout = () => {
       <BackNav route={{ url: `/`, name: 'Back' }} />
       <Typography variant="h1">{sentence()}</Typography>
       <WorkoutList workouts={workouts[type === 'a' ? 0 : 1]} type={type} />
-      <button type="button" onClick={() => reset()}>
+
+      <Button onClick={() => reset()} variant="ghost">
         Reset workout
-      </button>
+      </Button>
     </div>
   )
 }
