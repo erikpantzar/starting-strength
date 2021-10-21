@@ -6,6 +6,7 @@ import workoutA from './View/workoutA'
 import Workout from './View/Workout'
 import Great from './View/Great'
 import About from './View/About'
+import Info from './View/Info'
 
 const Routes = () => (
   <Switch>
@@ -14,6 +15,7 @@ const Routes = () => (
     <Route exact path="/workout/:type/finished" component={Great} />
     <Route exact path="/workout/:type/:workout" component={Workout} />
     <Route exact path="/about" component={About} />
+    <Route exact path="/info" component={Info} />
     <Redirect to="/" />
   </Switch>
 )
