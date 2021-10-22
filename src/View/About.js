@@ -4,6 +4,7 @@ import BackNav from '../Components/BackNav/BackNav'
 const About = () => (
   <div>
     <BackNav route={{ name: 'Back' }} />
+    <Typography variant="h2">What is Starting strength?</Typography>
     <Typography>
       Starting Strength is a workout program that gives you the most value for
       time spent in the gym.
