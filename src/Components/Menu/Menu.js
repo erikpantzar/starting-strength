@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Typography from '../Typography/Typography'
 
-export const Toggler = () => {
+export const Menu = () => {
   const [open, setOpen] = useState(false)
 
   const handleToggle = () => {
@@ -13,18 +13,21 @@ export const Toggler = () => {
   return (
     <>
       <div
-        className={['Nav-backdrop', open && 'nav--isOpen'].join(' ')}
+        className={['Menu-backdrop', open && 'Menu--isOpen'].join(' ')}
         onClick={() => setOpen(!open)}
       />
       <button
         type="button"
         onClick={() => handleToggle()}
-        className={['Toggler', open && 'Toggler--active'].join(' ')}
+        className={['Menu-Toggler', open && 'Menu-Toggler--active'].join(' ')}
       >
         II
       </button>
       <nav
-        className={['nav', open ? 'nav--isOpen' : 'nav--isClosed'].join(' ')}
+        className={[
+          'Menu-nav',
+          open ? 'Menu-nav--isOpen' : 'Menu-nav--isClosed',
+        ].join(' ')}
       >
         <article>
           <Link className="navLink" to="/about" onClick={() => setOpen(false)}>
@@ -50,4 +53,4 @@ export const Toggler = () => {
   )
 }
 
-export default Toggler
+export default Menu
