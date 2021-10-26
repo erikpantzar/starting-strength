@@ -30,7 +30,11 @@ export const Menu = () => {
         ].join(' ')}
       >
         <article>
-          <Link className="navLink" to="/about" onClick={() => setOpen(false)}>
+          <Link
+            className="Menu-link"
+            to="/about"
+            onClick={() => setOpen(false)}
+          >
             <Typography variant="h2">What is Starting strength?</Typography>
             <Typography>
               Starting Strength is a workout program that gives you the most
@@ -39,7 +43,7 @@ export const Menu = () => {
             Read more >>>
             {/* Placeholder til we figure out a nice design for link */}
           </Link>
-          <Link className="navLink" to="/info" onClick={() => setOpen(false)}>
+          <Link className="Menu-link" to="/info" onClick={() => setOpen(false)}>
             <Typography variant="h2">What are the exercises?</Typography>
             <Typography>
               Here you can read more about the variants and the different
