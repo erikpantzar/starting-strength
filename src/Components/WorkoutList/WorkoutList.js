@@ -1,15 +1,12 @@
 import { React } from 'react'
 import { Link } from 'react-router-dom'
-import doing from './doing-dot.svg'
-import done from './done-dot.svg'
 import { WORKOUTS_SET_AND_REPS } from '../../contants.js'
 import './WorkoutList.css'
-import {useWorkout} from "../../Context/workout-context";
+import { useWorkout } from '../../Context/workout-context'
 
 // const workouts = ['bench', 'squats']
 const WorkoutList = ({ workouts, type }) => {
-  const {  ...weightOfExercise  } = useWorkout()
-
+  const { ...weightOfExercise } = useWorkout()
 
   return (
     <nav className="WorkoutList">
@@ -30,11 +27,11 @@ const WorkoutList = ({ workouts, type }) => {
           <span className="weight">{weightOfExercise[workout.name]}kg</span>
           {workout.state === 'WORKOUT_DONE' ? (
             <div className="WorkoutList-link-icon">
-              <img src={done} alt="done" />
+              <span className="icon-done" />
             </div>
           ) : (
             <div className="WorkoutList-link-icon">
-              <img src={doing} alt="doing" />
+              <span className="icon-undone" />
             </div>
           )}
         </Link>

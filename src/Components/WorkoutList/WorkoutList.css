@@ -34,6 +34,19 @@
     transform: translate(-50%, -50%);
 }
 
+.icon-done {
+    border: solid 6px #00D1FF;
+    border-radius: 50%;
+    font-size: 0px;
+
+}
+
+.icon-undone {
+    border: solid 6px #DB009E;
+    border-radius: 50%;
+    font-size: 0px;
+}
+
 .WorkoutList-link:nth-child(1) {
     background: var(--color-main-cta);
     color: #FFFF;
