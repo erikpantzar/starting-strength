@@ -1,5 +1,7 @@
 import './Menu.css'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import Typography from '../Typography/Typography'
 
 export const Menu = () => {
   const [open, setOpen] = useState(false)
@@ -17,10 +19,7 @@ export const Menu = () => {
       <button
         type="button"
         onClick={() => handleToggle()}
-        className={[
-          'Menu-Toggler',
-          (open && 'Menu-Toggler--active': null),
-        ].join(' ')}
+        className={['Menu-Toggler', open && 'Menu-Toggler--active'].join(' ')}
       >
         II
       </button>
@@ -31,11 +30,27 @@ export const Menu = () => {
         ].join(' ')}
       >
         <article>
-          <h2>What is Starting strength?</h2>
-          <p>
-            A workout program to get you started with basic exercises and get
-            stronger!
-          </p>
+          <Link
+            className="Menu-link"
+            to="/about"
+            onClick={() => setOpen(false)}
+          >
+            <Typography variant="h2">What is Starting strength?</Typography>
+            <Typography>
+              Starting Strength is a workout program that gives you the most
+              value for time spent in the gym.
+            </Typography>
+            Read more >>>
+            {/* Placeholder til we figure out a nice design for link */}
+          </Link>
+          <Link className="Menu-link" to="/info" onClick={() => setOpen(false)}>
+            <Typography variant="h2">What are the exercises?</Typography>
+            <Typography>
+              Here you can read more about the variants and the different
+              exercises.
+            </Typography>
+            Read More >>>
+          </Link>
         </article>
       </nav>
     </>
