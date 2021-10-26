@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Toggler as MenuToggler } from '../Menu/Menu'
+import { Menu as MenuToggler } from '../Menu/Menu'
 import './SiteHeader.css'
 
 export const Logo = ({ variant = 'black' }) => (
