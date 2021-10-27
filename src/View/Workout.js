@@ -4,7 +4,6 @@ import { useParams, Redirect } from 'react-router-dom'
 import { useWorkout, useUpdateWorkout } from '../Context/workout-context'
 import { useUpdateWorkoutInfo } from '../Context/pass-context'
 import BackNav from '../Components/BackNav/BackNav'
-import Typography from '../Components/Typography/Typography'
 
 const Workout = () => {
   const { workout, type } = useParams()
@@ -27,9 +26,6 @@ const Workout = () => {
   return (
     <div>
       <BackNav route={{ url: `/workout/${type}`, name: 'Back' }} />
-      <Typography variant="h1" style={{ textTransform: 'Capitalize' }}>
-        {workout}
-      </Typography>
       <WorkoutForm
         excercise={workout}
         weight={workouts[workout]}

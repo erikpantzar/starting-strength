@@ -1,13 +1,40 @@
-.SSInput {
+.SSInput-container {
+    display: flex;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    color: #00326D;
+}
+
+.SSInput-value {
     box-sizing: border-box;
-    line-height: 81px;
-    border: 2px solid var(--color-input-border);
-    background-color: var(--color-input);
+    height: 100px;
+    width: 150px;
+    border-radius: 0px 7px;
     text-align: center;
-    width: 118px;
-    height: 81px;
     font-size: 36px;
-    font-weight: 500;
+    font-weight: 900;
+    
+}
+
+.SSInput-workout {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.SSInput-reps {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.SSInput-font {
+    font-family: 'Roboto', sans-serif;
+    color: #00326D;
 }
 
 .SSInput:focus,

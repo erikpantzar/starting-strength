@@ -6,18 +6,23 @@ const SSInput = ({ weight, onChange }) => {
   const { workout } = useParams()
 
   return (
-    <div>
+    <div className="SSInput-container">
       <input
-        className="SSInput"
+        className="SSInput-value SSInput-font"
         value={weight}
         onChange={(event) => {
           onChange(event.target.value)
         }}
       />
-      <div>{workout}</div>
-      <div>
+      <span
+        className="SSInput-workout SSInput-font"
+        style={{ textTransform: 'Capitalize' }}
+      >
+        {workout}
+      </span>
+      <span className="SSInput-reps SSInput-font">
         {WORKOUTS_SET_AND_REPS[workout][0]}x{WORKOUTS_SET_AND_REPS[workout][1]}
-      </div>
+      </span>
     </div>
   )
 }
