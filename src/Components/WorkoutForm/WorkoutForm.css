@@ -1,18 +1,18 @@
-.container {
+.WorkoutForm-container {
     height: 62vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.values {
+.WorkoutForm-values {
     align-items: center;
     height: 20vh;
     display: flex;
     justify-content: space-between;
 }
 
-.buttongroup-style {
+.WorkoutForm-buttongroup-style {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -21,11 +21,11 @@
     margin: auto;
 }
 
-.arrow-icon {
+.WorkoutForm-arrow-icon {
     transform: scale(0.8);
 }
 
-.form-button {
+.WorkoutForm-form-button {
     display: block;
     width: 100%;
     box-sizing: border-box;
@@ -38,25 +38,25 @@
     font-size: 16px;
 }
 
-.button-primary {
+.WorkoutForm-button-primary {
     background: var(--color-main-cta);
     color: #ffff;
     transition: background 500ms ease-in;
 }
 
-.primary-style {
+.WorkoutForm-primary-style {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.button-ghost {
+.WorkoutForm-button-ghost {
     background: var(--cancelbutton-color);
     border: 1px solid var(--cancelbutton-border);
     color: var(--cancelbutton-text);
 }
 
-.form-button:hover,
-.form-button:active {
+.WorkoutForm-form-button:hover,
+.WorkoutForm-form-button:active {
     transition: background 250ms ease-out;
 }  
