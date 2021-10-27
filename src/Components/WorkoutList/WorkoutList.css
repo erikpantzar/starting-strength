@@ -13,19 +13,19 @@
     position: relative;
     }
 
-.workout {
+.WorkoutList-workout {
     position: absolute;
     top: 10px;
     left: 10px;
 }
 
-.reps {
+.WorkoutList-reps {
     position: absolute;
     top: 10px;
     right: 10px;
 }
 
-.weight {
+.WorkoutList-weight {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -34,17 +34,14 @@
     transform: translate(-50%, -50%);
 }
 
-.icon-done {
+.WorkoutList-icon-done {
     border: solid 6px #00D1FF;
     border-radius: 50%;
-    font-size: 0px;
-
 }
 
-.icon-undone {
+.WorkoutList-icon-undone {
     border: solid 6px #DB009E;
     border-radius: 50%;
-    font-size: 0px;
 }
 
 .WorkoutList-link:nth-child(1) {
