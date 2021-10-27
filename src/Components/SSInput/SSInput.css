@@ -1,14 +1,13 @@
 .SSInput {
-    text-decoration: none;
-    height: 100px;
-    width: 150px;
-    text-transform: capitalize;
-    border-radius: 0px 7px;
-    margin: 0 8px 8px 0;
-    font-size: 32px;
-    font-weight: 900;
-    color: #00326D;
-    position: relative;
+    box-sizing: border-box;
+    line-height: 81px;
+    border: 2px solid var(--color-input-border);
+    background-color: var(--color-input);
+    text-align: center;
+    width: 118px;
+    height: 81px;
+    font-size: 36px;
+    font-weight: 500;
 }
 
 .SSInput:focus,
