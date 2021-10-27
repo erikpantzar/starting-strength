@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import Typography from '../Components/Typography/Typography'
 import { useWorkout } from '../Context/workout-context'
 import { useReset } from '../Context/pass-context'
