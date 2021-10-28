@@ -12,10 +12,7 @@ const WorkoutList = ({ workouts, type }) => {
     <nav className="WorkoutList">
       {workouts.map((workout) => (
         <Link
-          className={[
-            'WorkoutList-link',
-            workout.state === 'WORKOUT_DONE' ? 'workout_isDone' : null,
-          ].join(' ')}
+          className="WorkoutList-link"
           key={workout.name}
           to={`${type}/${workout.name}`}
         >
@@ -30,11 +27,11 @@ const WorkoutList = ({ workouts, type }) => {
             {weightOfExercise[workout.name]}kg
           </span>
           {workout.state === 'WORKOUT_DONE' ? (
-            <div className="WorkoutList-link-icon">
+            <div className="WorkoutList-status-icon">
               <span className="WorkoutList-icon-done" />
             </div>
           ) : (
-            <div className="WorkoutList-link-icon">
+            <div className="WorkoutList-status-icon">
               <span className="WorkoutList-icon-undone" />
             </div>
           )}
