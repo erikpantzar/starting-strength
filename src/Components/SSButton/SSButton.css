@@ -1,18 +1,19 @@
 .SSButton {
     display: inline-block;
-    height: 70px;
-    width: 92px;
-    border: 2px solid var(--color-ssbutton-border);
-    background-color: var(--color-ssbutton);
+    height: 33px;
+    width: 33px;
+    border: solid 1px #000000;
+    border-radius: 50%;
     box-sizing: border-box;
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 30px;
+    font-weight: 400;
+    font-size: 18px;
     text-align: center;
     transition: all 0.15s;
     cursor: pointer;
+    opacity: 20%;
     transition: background 500ms ease-in;
 }
 
