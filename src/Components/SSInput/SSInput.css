@@ -1,8 +1,6 @@
 .SSInput-container {
     display: flex;
     position: relative;
-    font-family: 'Roboto', sans-serif;
-    color: #00326D;
 }
 
 .SSInput-value {
