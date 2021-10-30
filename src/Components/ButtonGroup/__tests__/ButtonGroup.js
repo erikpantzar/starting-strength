@@ -3,7 +3,7 @@ import { MemoryRouter } from 'react-router-dom'
 import { render } from '@testing-library/react'
 import ButtonGroup from '../ButtonGroup'
 
-it.only('renders correct buttons', () => {
+it('renders correct buttons', () => {
   const links = [
     {
       text: 'Link A',
