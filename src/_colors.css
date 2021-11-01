@@ -4,12 +4,10 @@
 
     --color-header: #c1c1c1; /* Header color */
 
-    --workoutList-color-light: #E2E2E2; /* Color scheme for the three buttons after chosing Variant A or B */
-    --workoutList-color-mid: #C4C4C4; /* Color scheme for the three buttons after chosing Variant A or B */
-    --workoutList-color-dark: #747474; /* Color scheme for the three buttons after chosing Variant A or B */
+    --workoutList-color-main: #00326D; /* Color scheme for the workoutcards after chosing Variant */
+    --workoutList-status-icon: #DB009E;
+    --workoutList-status-icon-done: #00D1FF;
 
-    /* --savebutton-color: #C4C4C4;
-    --savebutton-border: #747474;  */
 
     --cancelbutton-color: #EFEFEF; /* Color scheme cancel button */
     --cancelbutton-border: #CCCCCC; /* Color scheme cancel button */
@@ -18,9 +16,7 @@
     --input-border: #BBBBBB;
     --input-border-active: #000;
 
-    --color-main-cta: #0F7DFF;
-    --color-second-cta: #58A5FF;
-    --color-third-cta: #9DCAFF;
+    --color-main-cta: #00326D;
     --color-fourth-cta: #D6E9FF;
 
     --color-variant-a: #FFBDA8;
@@ -31,13 +27,8 @@
 
     --color-input: #E9F3FF;
     --color-input-border: #C9C9C9;
-    /* --color-light: #E2E2E2;
-    --color-mid: #C4C4C4;
-    --color-dark: #747474; 
-    --default-color: #BBBBBB;
-    --active-color: #000;
-    --default-border: #BBBBBB;
-    --active-border: #000; */
 
     --size: 44px;
+
+
 }
