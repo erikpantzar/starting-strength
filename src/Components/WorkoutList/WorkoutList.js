@@ -26,15 +26,12 @@ const WorkoutList = ({ workouts, type }) => {
           <span className="WorkoutList-weight">
             {weightOfExercise[workout.name]}kg
           </span>
-          {workout.state === 'WORKOUT_DONE' ? (
-            <div className="WorkoutList-status-icon">
-              <span className="WorkoutList-icon-done" />
-            </div>
-          ) : (
-            <div className="WorkoutList-status-icon">
-              <span className="WorkoutList-icon-undone" />
-            </div>
-          )}
+          <div
+            className={[
+              'WorkoutList-status-icon',
+              workout.state && 'WorkoutList-status-icon--isDone',
+            ].join(' ')}
+          />
         </Link>
       ))}
     </nav>
@@ -42,3 +39,5 @@ const WorkoutList = ({ workouts, type }) => {
 }
 
 export default WorkoutList
+
+//

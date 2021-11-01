@@ -4,7 +4,7 @@
 }
 
 .WorkoutList-link {
-    background-color: #00326D;
+    background: var(--workoutList-color-main);
     color: #fff;
     text-decoration: none;
     height: 100px;
@@ -14,11 +14,6 @@
     margin: 0 8px 8px 0;
     position: relative;
     }
-
-.WorkoutList-link.workout_isDone {
-    background: var(--color-main-cta);
-    color: #FFF;
-}
 
 .WorkoutList-workout {
     position: absolute;
@@ -41,18 +36,6 @@
     transform: translate(-50%, -50%);
 }
 
-.WorkoutList-icon-done {
-    border: solid 6px #00D1FF;
-    border-radius: 50%;
-    font-size: 0px;
-}
-
-.WorkoutList-icon-undone {
-    border: solid 6px #DB009E;
-    border-radius: 50%;
-    font-size: 0px;
-}
-
 .WorkoutList-link-text {
     font-weight: 400;
     font-size: 12px;
@@ -62,4 +45,11 @@
     position: absolute;
     bottom: 10px;
     left: 10px;
+    border-radius: 50%;
+    width: 12px; height: 12px;
+    background: var(--workoutList-status-icon);
+}
+
+.WorkoutList-status-icon.WorkoutList-status-icon--isDone {
+    background: var(--workoutList-status-icon-done);
 }
