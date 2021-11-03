@@ -8,6 +8,8 @@
     --workoutList-status-icon: #DB009E;
     --workoutList-status-icon-done: #00D1FF;
 
+    --workoutForm-save-color: #00D1FF;
+    --workoutForm-cancel-color: #DB009E;
 
     --cancelbutton-color: #EFEFEF; /* Color scheme cancel button */
     --cancelbutton-border: #CCCCCC; /* Color scheme cancel button */

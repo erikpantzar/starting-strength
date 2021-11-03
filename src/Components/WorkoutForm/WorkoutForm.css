@@ -16,7 +16,6 @@
 
 .WorkoutForm-buttongroup-style {
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     height: 160px;
     width: 222px;
@@ -40,19 +39,19 @@
     font-size: 16px;
 }
 
-.WorkoutForm-button-primary {
+.WorkoutForm-button-save {
     background: var(--color-main-cta);
     color: #ffff;
     transition: background 500ms ease-in;
 }
 
-.WorkoutForm-primary-style {
+.WorkoutForm-save-icon {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.WorkoutForm-button-ghost {
+.WorkoutForm-button-cancel {
     background: var(--cancelbutton-color);
     border: 1px solid var(--cancelbutton-border);
     color: var(--cancelbutton-text);

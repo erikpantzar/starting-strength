@@ -2,7 +2,8 @@ import { useState } from 'react'
 import './WorkoutForm.css'
 import SSButton from '../SSButton/SSButton'
 import SSInput from '../SSInput/SSInput'
-import arrow from './WorkoutForm-arrow.svg'
+import save from './WorkoutForm-save-icon.svg'
+import cancel from './WorkoutForm-cancel-icon.svg'
 
 const WorkoutForm = ({ excercise, weight, onSubmit }) => {
   const [updatedWeight, setUpdatedWeight] = useState(weight)
@@ -32,20 +33,27 @@ const WorkoutForm = ({ excercise, weight, onSubmit }) => {
       </div>
       <div className="WorkoutForm-buttongroup-style">
         <button
-          type="submit"
-          className="WorkoutForm-form-button WorkoutForm-button-primary"
+          type="button"
+          className="WorkoutForm-form-button WorkoutForm-button-cancel"
+          onClick={() => window.history.back()}
         >
-          <span className="WorkoutForm-primary-style">
-            Save & Continue{' '}
-            <img className="WorkoutForm-arrow-icon" alt="arrow" src={arrow} />
+          <span>
+            Cancel
+            <img
+              className="WorkoutForm-cancel-icon"
+              alt="cancel"
+              src={cancel}
+            />
           </span>
         </button>
         <button
-          type="button"
-          className="WorkoutForm-form-button WorkoutForm-button-ghost"
-          onClick={() => window.history.back()}
+          type="submit"
+          className="WorkoutForm-form-button WorkoutForm-button-save"
         >
-          Cancel
+          <span className="WorkoutForm-save-icon">
+            Save & Continue{' '}
+            <img className="WorkoutForm-save-icon" alt="save" src={save} />
+          </span>
         </button>
       </div>
     </form>
