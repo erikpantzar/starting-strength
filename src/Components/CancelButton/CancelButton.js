@@ -9,6 +9,7 @@ const CancelButton = () => {
       onClick={() => window.history.back()}
     >
       <svg
+        className="WorkoutForm-button-cancel-icon"
         width="29"
         height="29"
         viewBox="0 0 29 29"

@@ -1,5 +1,6 @@
 .WorkoutForm-button-save {
-    height: 60px;
+    height: 70px;
+    width: 70px;
     color: var(--workoutForm-save-color);
     background: none;
     border: none;
@@ -11,8 +12,4 @@
     font-weight: 700;
     font-size: 10px;
     text-transform: uppercase;
-}
-
-.svg {
-    fill: inherit;
 }
