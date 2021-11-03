@@ -12,28 +12,26 @@ const WorkoutList = ({ workouts, type }) => {
     <nav className="WorkoutList">
       {workouts.map((workout) => (
         <Link
-          className={[
-            'WorkoutList-link',
-            workout.state === 'WORKOUT_DONE' ? 'workout_isDone' : null,
-          ].join(' ')}
+          className="WorkoutList-link"
           key={workout.name}
           to={`${type}/${workout.name}`}
         >
-          <span className="WorkoutList-link-text workout">{workout.name}</span>
-          <span className="WorkoutList-link-text reps">
+          <span className="WorkoutList-link-text WorkoutList-workout">
+            {workout.name}
+          </span>
+          <span className="WorkoutList-link-text WorkoutList-reps">
             {WORKOUTS_SET_AND_REPS[workout.name][0]}x
             {WORKOUTS_SET_AND_REPS[workout.name][1]}
           </span>
-          <span className="weight">{weightOfExercise[workout.name]}kg</span>
-          {workout.state === 'WORKOUT_DONE' ? (
-            <div className="WorkoutList-link-icon">
-              <span className="icon-done" />
-            </div>
-          ) : (
-            <div className="WorkoutList-link-icon">
-              <span className="icon-undone" />
-            </div>
-          )}
+          <span className="WorkoutList-weight">
+            {weightOfExercise[workout.name]}kg
+          </span>
+          <div
+            className={[
+              'WorkoutList-status-icon',
+              workout.state && 'WorkoutList-status-icon--isDone',
+            ].join(' ')}
+          />
         </Link>
       ))}
     </nav>
@@ -41,3 +39,5 @@ const WorkoutList = ({ workouts, type }) => {
 }
 
 export default WorkoutList
+
+//
