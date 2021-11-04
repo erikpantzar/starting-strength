@@ -29,7 +29,7 @@ const Workout = () => {
       <Typography variant="h1">{sentence()}</Typography>
       <WorkoutList workouts={workouts[type === 'a' ? 0 : 1]} type={type} />
 
-      <Button onClick={() => reset()} variant="ghost">
+      <Button onClick={() => reset()} variant="reset">
         Reset workout
       </Button>
     </div>

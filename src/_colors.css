@@ -28,5 +28,7 @@
 
     --size: 44px;
 
-
-}
+    --button-reset-color: grey;
+    --button-reset-border: black;
+    --button-reset-text: black;
+}   

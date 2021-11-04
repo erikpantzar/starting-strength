@@ -13,8 +13,8 @@ const Button = ({
     switch (variant) {
       case 'primary':
         return 'Button Button-primary'
-      case 'ghost':
-        return 'Button Button-ghost'
+      case 'reset':
+        return 'Button Button-reset'
       case 'default':
       default:
         return 'Button'
