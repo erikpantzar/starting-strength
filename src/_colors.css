@@ -8,10 +8,8 @@
     --workoutList-status-icon: #DB009E;
     --workoutList-status-icon-done: #00D1FF;
 
-
-    --cancelbutton-color: #EFEFEF; /* Color scheme cancel button */
-    --cancelbutton-border: #CCCCCC; /* Color scheme cancel button */
-    --cancelbutton-text: #808080; /* Color scheme cancel button */
+    --workoutForm-save-color: #00D1FF;
+    --workoutForm-cancel-color: #DB009E;
 
     --input-border: #BBBBBB;
     --input-border-active: #000;
@@ -30,5 +28,13 @@
 
     --size: 44px;
 
+    --button-reset-background: #D1D1D1;
+    --button-reset-text: #323232;
 
-}
+    /* --button-track-a-background: #0057FF;
+    --button-track-a-text: #FFFFFF;
+
+    --button-track-b-background: #71006C;
+    --button-track-b-text: #FFFFFF; */
+    /* Saving these for later */
+}   
