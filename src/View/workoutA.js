@@ -30,7 +30,7 @@ const Workout = () => {
       <WorkoutList workouts={workouts[type === 'a' ? 0 : 1]} type={type} />
 
       <Button onClick={() => reset()} variant="reset">
-        Reset workout
+        Reset Workout
       </Button>
     </div>
   )

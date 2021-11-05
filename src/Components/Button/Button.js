@@ -11,10 +11,14 @@ const Button = ({
 }) => {
   const getButtonVariant = () => {
     switch (variant) {
-      case 'primary':
-        return 'Button Button-primary'
+      case 'summary':
+        return 'Button Button-summary'
       case 'reset':
         return 'Button Button-reset'
+      case 'track-a':
+        return 'Button Button-track-a'
+      case 'track-b':
+        return 'Button Button-track-b'
       case 'default':
       default:
         return 'Button'
